@@ -20,7 +20,7 @@ function btnPress(event) {
 
   // setting text content
   listItem.textContent = text;
-  deleteButton.textContent = "delete"
+  deleteButton.textContent = "x"
 
   // structuring elements
   listItem.appendChild(deleteButton);

@@ -1,4 +1,129 @@
-body {
-  background-color: lightblue;
+:root {
+    /* --- COLOR PALETTE --- */
+    --color-dark-blue: #133c55;   /* Indigo Dye (Body BG, Delete Btn) */
+    --color-med-blue: #386fa4;    /* Bice Blue (App Container BG, UL BG) */
+    --color-light-blue: #84d2f6;  /* Pale Azure (List Item BG, Hover) */
+    --color-accent-blue: #91e5f6; /* Non Photo Blue (Input BG, Add Btn) */
+    --color-primary-text: #f0f0f0; /* Soft White (Dark BG Text) */
+    --color-secondary-text: #333333; /* Dark Charcoal (Light BG Text) */
+
+    /* --- SHAPES & SPACING --- */
+    --spacing-gap: 15px;
+    --border-radius-lg: 10px;
+    --border-radius-sm: 4px;
 }
+
+/* ==================================== */
+/* 1. GLOBAL & BODY STYLES              */
+/* ==================================== */
+body {
+    background-color: var(--color-dark-blue);
+    font-family: sans-serif;
+    color: var(--color-primary-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--color-primary-text);
+}
+
+/* ==================================== */
+/* 2. APP CONTAINER                     */
+/* ==================================== */
+.app-container {
+    background-color: var(--color-med-blue);
+    color: var(--color-primary-text);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap);
+}
+
+/* ==================================== */
+/* 3. FORM & CONTROLS                   */
+/* ==================================== */
+form {
+    color: var(--color-primary-text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    background-color: var(--color-accent-blue);
+    color: var(--color-secondary-text);
+    padding: 8px;
+    border: 2px solid #6987c9;
+    border-radius: var(--border-radius-sm);
+    flex-grow: 1;
+}
+
+form button {
+    background-color: var(--color-accent-blue);
+    color: var(--color-secondary-text);
+    padding: 8px 15px;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: var(--color-light-blue);
+    color: var(--color-secondary-text);
+}
+
+
+/* ==================================== */
+/* 4. LIST CONTAINER (UL) & ITEMS (LI)  */
+/* ==================================== */
+ul {
+    background-color: var(--color-med-blue);
+    padding: 10;
+    border-radius: var(--border-radius-lg);
+}
+
+li {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--color-light-blue);
+    border-radius: 2px;
+    border-bottom: 3px solid var(--color-med-blue);
+}
+
+/* Delete Button */
+li button {
+    margin-left: 12px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-primary-text);
+    font-weight: bold;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    padding: 4px 8px;
+    line-height: 1;
+    font-size: 0.9rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+li button:hover {
+  background-color: var(--color-med-blue);
+  transform: scale(1.05);
+}
+
+
 
