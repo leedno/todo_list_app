@@ -1,13 +1,13 @@
 :root {
     /* --- COLOR PALETTE --- */
-    --color-dark-blue: #133c55;   /* Indigo Dye (Body BG, Delete Btn) */
-    --color-med-blue: #386fa4;    /* Bice Blue (App Container BG, UL BG) */
-    --color-light-blue: #84d2f6;  /* Pale Azure (List Item BG, Hover) */
-    --color-accent-blue: #91e5f6; /* Non Photo Blue (Input BG, Add Btn) */
-    --color-primary-text: #f0f0f0; /* Soft White (Dark BG Text) */
-    --color-secondary-text: #333333; /* Dark Charcoal (Light BG Text) */
+    --color-dark-blue: #133c55;   /* Indigo Dye */
+    --color-med-blue: #386fa4;    /* Bice Blue */
+    --color-light-blue: #84d2f6;  /* Pale Azure */
+    --color-accent-blue: #91e5f6; /* Non Photo Blue */
+    --color-primary-text: #f0f0f0; /* Soft White */
+    --color-secondary-text: #333333; /* Dark Charcoal */
 
-    /* --- SHAPES & SPACING --- */
+    /* --- SPACING --- */
     --spacing-gap: 15px;
     --border-radius-lg: 10px;
     --border-radius-sm: 4px;
