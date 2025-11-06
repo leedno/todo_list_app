@@ -4,4 +4,4 @@ This is a single-page To-Do List application built using pure JavaScript, HTML, 
 
 ### Video demonstration:
 
-[![Watch the Demo on YouTube](https://img.youtube.com/vi/eyUe5JhMkRk/0.jpg)](https://youtu.be/eyUe5JhMkRk)
+[![Watch the Demo on YouTube](https://img.youtube.com/vi/eyUe5JhMkRk/maxresdefault.jpg)](https://youtu.be/eyUe5JhMkRk)
