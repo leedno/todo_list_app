@@ -28,6 +28,7 @@ body {
 
 h1 {
     color: var(--color-primary-text);
+    font-weight: 700;
 }
 
 /* ==================================== */
@@ -68,6 +69,11 @@ input[type="text"] {
     flex-grow: 1;
 }
 
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--color-accent-blue);
+}
+
 form button {
     background-color: var(--color-accent-blue);
     color: var(--color-secondary-text);
@@ -94,6 +100,7 @@ ul {
 }
 
 li {
+    color: var(--color-secondary-text);
     margin: 0;
     display: flex;
     justify-content: space-between;
